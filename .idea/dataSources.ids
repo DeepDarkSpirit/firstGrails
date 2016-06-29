@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="firstGrails dev" uuid="847776c6-e754-4ee7-b236-1f3bc7a07053">
+    <database-info product="MySQL" version="5.7.11-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="grails"/>
+    <table name="academician" schema="" catalog="grails" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="candidateid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="death" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="death_day" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="degree" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="disciplines" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="division" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="election_year" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ethnicity" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id_type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="idnum" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nominationid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="organization" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="recall" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="state" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="ballot_content" schema="" catalog="grails" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="a_max" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="a_min" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="a_score" sqlType="DECIMAL" precision="19" scale="4" nullable="true" jdbcType="3"/>
+      <column name="b_max" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="b_min" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="b_score" sqlType="DECIMAL" precision="19" scale="4" nullable="true" jdbcType="3"/>
+      <column name="c_max" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="c_min" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="c_score" sqlType="DECIMAL" precision="19" scale="4" nullable="true" jdbcType="3"/>
+      <column name="columns" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="create_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="d_max" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="d_min" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="d_score" sqlType="DECIMAL" precision="19" scale="4" nullable="true" jdbcType="3"/>
+      <column name="default_option" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="divisionid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="e_max" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="e_min" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="e_score" sqlType="DECIMAL" precision="19" scale="4" nullable="true" jdbcType="3"/>
+      <column name="election_year" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="groupid" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="min_agree" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="modify_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="pass_score" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="roundid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="status" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="times" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="type" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="way" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKDD618498ADD1300D" table="ballot_result" schema="" catalog="grails" columns="ballot_content_id"/>
+    </table>
+    <table name="ballot_result" schema="" catalog="grails" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="a_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="b_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="ballot_content_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="c_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="candidateid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="d_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="disciplines" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="e_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nominationid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="organization" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="score" sqlType="DECIMAL" precision="19" scale="2" nullable="true" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKDD618498ADD1300D" columns="ballot_content_id" ref-table="ballot_content" ref-schema="" ref-catalog="grails" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FKDD618498ADD1300D" unique="false" columns="ballot_content_id"/>
+    </table>
+    <table name="candidate" schema="" catalog="grails" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="candidateid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="degree" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="disciplines" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="division" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="division_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="election_year" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ethnicity" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="group_num" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id_type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="idnum" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nominationid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="organization" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="state" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="division" schema="" catalog="grails" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="divisionid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="division_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="groupid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="group_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK87545841FAEAF25E" table="turn_candidate" schema="" catalog="grails" columns="division_id"/>
+    </table>
+    <table name="turn_candidate" schema="" catalog="grails" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="candidateid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="disciplines" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="division_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="election_year" sqlType="VARCHAR" precision="4" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nominationid" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="organization" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="pass" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12"/>
+      <column name="turnid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK87545841FAEAF25E" columns="division_id" ref-table="division" ref-schema="" ref-catalog="grails" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK87545841FAEAF25E" unique="false" columns="division_id"/>
+    </table>
+  </data-source>
+</component>

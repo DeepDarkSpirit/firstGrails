@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="firstGrails dev" uuid="847776c6-e754-4ee7-b236-1f3bc7a07053">
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <schema-pattern>grails.*</schema-pattern>
+      <default-schemas>grails.*</default-schemas>
+    </data-source>
+  </component>
+</project>

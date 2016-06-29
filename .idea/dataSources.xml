@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1461396600">
+    <data-source source="LOCAL" name="firstGrails dev" uuid="847776c6-e754-4ee7-b236-1f3bc7a07053">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/grails?useUnicode=true&amp;amp;characterEncoding=UTF8&amp;useSSL=false</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.38-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
